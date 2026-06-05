@@ -6,10 +6,12 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 40px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: flex; /* esto alinea todo en un contenedor */
+    justify-content: center; /*esto específica cómo se van a alinear */
+
+    /*esto va a evitar que se hagan largos todos, los alinea arriba */
     align-items: flex-start;
+    /*  y esto va a darle espacio a cada columna */
     gap: 30px;
 }
 
@@ -19,7 +21,6 @@ body {
     border-radius: 12px;
     padding: 30px 20px;
     box-shadow: 0 4px 12px rgba(131, 81, 62, 0.05);
-    min-width: 120px;
     text-align: center;
 }
 
