@@ -8,41 +8,91 @@
     <meta name="autor" content="Zaira Barajas">
     <meta name="robots" content="index, follow">
     <title>Mis hobbies</title>
+    <link rel="icon" type="image/png" href="imagenes/zairaBarajas.jpeg">
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <header>
-        <h1>Mis Hobbies</h1><br>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="hobbies.html">Mis hobbies</a>
-        </nav>
+                <div class="menu">
+                    <h3>Menú Principal</h3>
+                    <nav class="nav-main">
+                        <a href="index2.html"> <img src="imagenes/inicio.png" width="50" height="50"></a>
+                        <a href="hobbies.html" ><img src="imagenes/hobbies.png" width="50" height="50"></a>
+                        <a href="estudios.html" ><img src="imagenes/estudio.png" width="50" height="50"></a>
+                        <a href="trabajos.html" ><img src="imagenes/experiencia.png" width="50" height="50"></a>
+                    </nav>
+                </div>
     </header>
-    <main>
-        <p> Entre los hobbies que tengo más presentes últimamente están:</p>
-        <ol>
-            <li> <a href="#topVideojuegos">Jugar videojuegos</a></li>
-            <li> <a href="#ultimasPinturas"> Pintar con acrílico</a></li>
-            <li>Hacer figuras con arcilla fría</li>
-            <li>Coleccionar cartas de Pokémon</li>
-            <li>Costura - Hacer peluches</li>
-            <li>Aprender hobbies nuevos</li>
+    <main class="principal">
 
-        </ol>
+        <div class="info-encabezado-hobbies">
+            <h1>Mis hobbies</h1>
+        </div>
 
-        <h3 id="topVideojuegos">Top videojuegos que he jugado últimamente</h3>
-        <ol>
-            <li>Red Dead Redemption</li>
-            <li>GTA 5</li>
-            <li>Green Hell</li>
-        </ol>
+        <section class="destacados">
+            <h3>Mis hobbies principales: </h3>
+            <p> Entre los hobbies que tengo más presentes últimamente están:</p>
+            <ol>
+                <li> <a href="#topVideojuegos">Jugar videojuegos</a></li>
+                <li> <a href="#ultimasPinturas"> Pintar con acrílico</a></li>
+                <li>Hacer figuras con arcilla fría</li>
+                <li>Coleccionar cartas de Pokémon</li>
+                <li>Costura - Hacer peluches</li>
+                <li>Aprender hobbies nuevos</li>
 
-        <h3 id="ultimasPinturas">Últimas pinturas que he hecho</h3>
-        <img src="./imagenes/pinturaGatoConCafe.jpeg" alt="pintura en acrílico de un gato negro sentado en una mesa con un café" width="200">
-        <img src="./imagenes/pinturaMarPokemon.jpeg" alt="pintura en acrílico sin terminar de un mar lleno de pokémon marinos" width="200">
+            </ol>
+        </section>
+
+    <section id="videojuegos">
+        <div id="tituloTopVideojuegos">
+            <h3 id="topVideojuegos">Top videojuegos que he jugado últimamente</h3>
+            <p>Disfruto mucho jugar videojuegos. Debido a que no estaba en mis prioridades comprar una consola
+            por lo general jugaba juegos en emuladores en la computadora familiar. Crecí jugando los juegos de
+            Pokémon; desde clásicos como el rojo, azul y amarillo, hasta juegos como Pokémon red rescue team.
+            Sin embargo, debido a la escuela tengo una computadora mejor y estos son los últimos juegos que he jugado: </p>
+        </div>
+        <div id="imagenVideojuego1">
+            <img src="imagenes/rdr2.jpg">
+        </div>
+        <div id="nombreVideojuego1">
+            <h5>Red Dead Redemption</h5>
+        </div>
+        </div>
+        <div id="imagenVideojuego2">
+            <img src="imagenes/gta5.jpg">
+        </div>
+        <div id="nombreVideojuego2">
+            <h5>GTA 5</h5>
+        </div>
+        </div>
+        <div id="imagenVideojuego3">
+            <img src="imagenes/greenhell.png">
+        </div>
+        <div id="nombreVideojuego3">
+            <h5>Green Hell</h5>
+        </div>
+    </section>
+
+
+        <section>
+            <div id="ultimasPinturasTitulo">
+                <h3>Últimas pinturas que he hecho</h3>
+            </div>
+            <div id="ultimasPinturas">
+                <img src="./imagenes/pinturaGatoConCafe.jpeg" alt="pintura en acrílico de un gato negro sentado en una mesa con un café." width="200">
+                <img src="./imagenes/pinturaMarPokemon.jpeg" alt="pintura en acrílico sin terminar de un mar lleno de pokémon marinos." width="200">
+                <img src="./imagenes/ventanaBobEsponja.jpeg" alt="pintura en acrílico de una ventana de un paisaje de Bob Esponja en un marco redondo." width="200">
+            </div>
+
+        </section>
+
     </main>
-    <footer>
-        <p>&copy; Derechos Reservados Zaira Barajas 2026</p>
+    <footer class="final">
+        <div>
+            Siguanme los buenos
+            <a href="https://www.linkedin.com/in/zairapbarajas/" target="_blank">LinkedIn</a>
+        </div>
+        <p id="pie">&copy; Derechos Reservados Zaira Barajas 2026</p>
     </footer>
 
 </body>
