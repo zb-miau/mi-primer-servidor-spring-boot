@@ -1,0 +1,318 @@
+:root{
+    --bg-color: #FFFAF0;
+    --primary-color: #F6DFB3;
+    --secondary-color: #49221C;
+    --accent-color: #EC739F;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+body {
+    font-family: "Century Gothic", "Segoe UI",  sans-serif;
+    background: linear-gradient(3deg, var(--bg-color) 0%, var(--accent-color) 100%) fixed;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 8px solid var(--accent-color);
+}
+
+.encabezado, #ultimasPinturas {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 80%;
+}
+
+.info-encabezado-main, .info-encabezado-hobbies, .info-encabezado-estudios, .info-encabezado-trabajos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Impact", "Arial Black", sans-serif;
+    margin: 0;
+    letter-spacing: 1px;
+    text-align: center;
+    color: black;
+}
+
+.info-encabezado-main h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.info-encabezado-main h3 {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 80%;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--secondary-color);
+    gap: 40px;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    min-width: 80%;
+    border: 1px solid var(--primary-color);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--secondary-color);
+    gap: 20px;
+}
+
+.sobremi {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    justify-content: center;
+    justify-items: center;
+}
+
+#tituloSobreMi {
+    grid-area: 1 / 2 / 2 / 5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /*Empieza en la fila y columna 1 y
+    termina antes de llegar a la fila 3 y la columna 2*/
+}
+
+#imagenSobreMi1, #imagenSobreMi2, #imagenSobreMi3 {
+    width: 200px;
+    aspect-ratio: 3/4;
+}
+
+#imagenSobreMi1 {
+    grid-area:  2 / 2 / 4 / 3;
+}
+
+#imagenSobreMi1 img, #imagenSobreMi2 img, #imagenSobreMi3 img{
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--secondary-color);
+}
+
+#imagenSobreMi2 {
+    grid-area: 2 / 3 / 4 / 4;
+}
+
+#imagenSobreMi3 {
+    grid-area: 2 / 4 / 4 / 5;
+}
+
+
+#textoSobreMi {
+    grid-area: 4 / 2 / 5 / 5;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#misHabilidades {
+    grid-area: 5 / 2 / 6 / 5;
+}
+
+.tablaLaboral {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.tablaLaboral th {
+    background-color: rgb(242, 138, 161);
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tablaLaboral td {
+    border-bottom: 1px solid rgba(242, 138, 161, 0.3);
+    padding: 12px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tablaLaboral tr:hover{
+    background-color: lightpink;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-tabla {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.tablaHabilidades {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+    box-shadow: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.tablaHabilidades th, .tablaHabilidades td {
+    padding: 5px 10px;
+}
+
+.final {
+    margin: 20px;
+}
+
+#descripcionesEmpleo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#tituloShining {
+    grid-area: 1 / 1 / 2 / 2;
+}
+#responsabilidadesShining {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#imagenesShining {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+#tituloVTF{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#responsabilidadesVTF {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+#imagenesVTF {
+    grid-area: 3 / 2 / 5 / 3;
+
+}
+
+#tituloMagnolia {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+#responsabilidadesMagnolia {
+    grid-area: 6 / 1 / 7 / 2;
+}
+
+#imagenesMagnolia {
+    grid-area: 5 / 2 / 7 / 3;
+}
+
+#imagenesVTF img {
+    width: 200px;
+    aspect-ratio: 3/4;
+    margin-top: 30px;
+}
+
+#videojuegos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width:80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+#videojuegos h3, #ultimasPinturasTitulo h3, #nombreVideojuego1 h5, #nombreVideojuego2 h5, #nombreVideojuego3 h5 {
+    text-align: center;
+}
+
+#videojuegos p, #textoSobreMi p {
+    text-align: justify;
+}
+
+#tituloTopVideojuegos {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+#imagenVideojuego1 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#nombreVideojuego1 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#imagenVideojuego2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#nombreVideojuego2 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#imagenVideojuego3 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+#nombreVideojuego3 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+#imagenVideojuego1 img, #imagenVideojuego2 img, #imagenVideojuego3 img, #ultimasPinturas img {
+    width: 200px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: center;
+    margin: 10px;
+}
+
+.destacados{
+    max-width: 1000px;
+    margin: 0 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.destacados h3{
+    text-align: center;
+}
+
+#laet a {
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--accent-color)
+}
+
+#cbtis li, #insof li{
+    margin-bottom: 5px;
+}
