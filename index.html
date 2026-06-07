@@ -8,9 +8,11 @@
     <meta name="autor" content="Zaira Barajas">
     <meta name="robots" content="index, follow">
     <title>Portafolio Personal - ZB</title>
+    <link rel="icon" type="image/png" href="imagenes/zairaBarajas.jpeg">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="encabezado">
         <h1>Zaira Barajas</h1>
         <p>Lic. Admin. Emp. Tur. | Estudiante de Ing. Software</p>
        <nav>
@@ -29,17 +31,18 @@
     <main>
         <section id="sobremi">
             <h1>Sobre mi</h1>
-            <p>
+            <p class="destacado">
                 Hola soy <strong>Zaira Barajas</strong>
                 y soy licenciada en Administración de Empresas Turísticas
-                y estudiante de Ingeniería en Software. <br>
-
+                y estudiante de Ingeniería en Software.
+                <br>
+                <br>
                 <img src="./imagenes/zairaBarajas.jpeg" alt="Foto de Zaira Barajas frente a su ponencia en evento de AMESTUR." width="200">
             </p>
         </section>
         <section id="habilidades">
             <h1>Mis habilidades</h1>
-            <table>
+            <table class="tablaHabilidades">
                 <tr>
                     <th>Habilidades Blandas</th>
                     <th>Habilidades Técnicas</th>
@@ -103,7 +106,7 @@
             </ul>
 
             <h3>Experiencia Laboral</h3>
-            <table border="1">
+            <table border="1" class="tablaLaboral">
                 <tr>
                     <th>Empresa</th>
                     <th>Puesto</th>
@@ -128,12 +131,12 @@
             <br>
         </section>
     </main>
-    <footer>
+    <footer class="final">
         <div>
             Siguanme los buenos
             <a href="https://www.linkedin.com/in/zairapbarajas/" target="_blank">LinkedIn</a>
         </div>
-        <p>&copy; Derechos Reservados Zaira Barajas 2026</p>
+        <p id="pie">&copy; Derechos Reservados Zaira Barajas 2026</p>
     </footer>
 
 </body>
